@@ -15,11 +15,12 @@ class Conexion{
 
             echo $conexion->connect_errno . "error en la conexion";
 
-            return $conexion;
+         
         }else{
             echo "Excelente conexion";
         }
         $conexion->set_charset('utf8');
+        return $conexion;
 
     }
 }
