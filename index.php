@@ -219,6 +219,14 @@
 	<div id="alert"></div>
 	<div id="alert2"></div>
 </div>
+
+<div class="contenedor_productos">
+<?php
+require_once('controller/controller_productos.php');
+
+?>
+
+</div>
 <?php
 require_once('view/modelo/Footer_index.php');
 ?>
