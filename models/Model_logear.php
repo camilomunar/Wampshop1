@@ -1,6 +1,6 @@
 <?php
 
-class Login {
+class Login{
 	private $User;
 	private $Password;
 	public  $Id_usuario;
@@ -8,11 +8,12 @@ class Login {
 
 	public function Validar (){
 
+		$this->conexion=Conexion::conectar();
 		$this->User= htmlspecialchars($_POST['User']);
 		$this->Password= htmlspecialchars($_POST['Password']);
 
 		$query="SELECT*FROM usuario INNER JOIN administrador on usuario.Cod_usuario = administrador.Cod_usuario WHERE Nombre_usuario='$this->User'";
-		$resultado=Conexion::conectar->query($query);
+		$resultado=$this->conexion->query($query);
 		while($row=mysqli_fetch_assoc($resultado)){
 			if($row['Cod_usuario']==$row['Cod_usuario']){
 			if($this->User==$row['Nombre_usuario']){	
