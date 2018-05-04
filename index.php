@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -69,7 +68,7 @@ session_start();
 	<h1 class="titulo">Iniciar Sesion</h1>
 	 <!--IMAGEN LOGO-->
 	 
-	<form action="Logear.php" method="post">
+	<form action="models/Model_logear.php" method="post">
 		
 		<input type="text" name="User" class="campo campo1" placeholder="Usuario" required><br>
 		<input type="Password" name="Password" class="campo campo2" placeholder="Contraseña" ><br>
@@ -236,6 +235,3 @@ require_once('view/modelo/Footer_index.php');
 		
 </body>
 </html>
-=======
-<<!DOCTYPE html>
->>>>>>> origin
