@@ -3,9 +3,9 @@
 class producto{
 
 public function mostrar_producto(){
-
+    $conexion=Conexion::conectar();
     $consulta = "SELECT * FROM producto WHERE Estado = 'Activo' LIMIT 0,8";
-    $resultado = $this->conexion->query($consulta);
+    $resultado = $conexion->query($consulta);
 
     while ($row=mysqli_fetch_assoc($resultado)){
 
