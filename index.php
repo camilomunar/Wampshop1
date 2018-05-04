@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -235,3 +236,6 @@ require_once('view/modelo/Footer_index.php');
 		
 </body>
 </html>
+=======
+<<!DOCTYPE html>
+>>>>>>> origin
