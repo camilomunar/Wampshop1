@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -8,14 +7,6 @@
 <link rel="stylesheet" type="text/css" href="css/Consola_adap.css"/>
 	<link rel="shortcut icon" type="image/ png" href="img/zapato.png">
 <!--COD//solocar un slaider en pagina princiapal ::COD//insertar icono de pagina principal::COD//cambiar diseño de la barra de busqueda::COD//Hacer que la barra de busqueda funcione//Correccion de la base de datos-->
-<?php
-session_start();
-	if(isset($_SESSION['Usuario'])){
-	header('location: usuario.php');
-	}else if(isset($_SESSION['Administrador'])){
-		header('location: Administrador.php');
-	}
-?>
 
 </head>
 <body>
@@ -236,6 +227,3 @@ require_once('view/modelo/Footer_index.php');
 		
 </body>
 </html>
-=======
-<<!DOCTYPE html>
->>>>>>> origin
